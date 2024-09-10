@@ -29,6 +29,7 @@ def download_video(link, itag=None):
         print(f"No stream found with itag {itag}")
 
 
+#In case the file from PytubeFix has the av01 codec, change it to h264 so it's usable in other softwares.
 def convert_av1_to_h264(input_file):
     output_file = input_file.replace('.webm', '_h264.mp4')  # Change extension to .mp4 for H.264
 
